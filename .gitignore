@@ -1,0 +1,9 @@
+.tmb/
+.idea/
+wp-content/themes/twentytwenty/
+wp-content/themes/twentytwentyone/
+wp-content/themes/twentytwentytwo/
+wp-content/themes/my-inherit/
+wp-content/plugins/
+wp-content/uploads/
+wp-content/cache/

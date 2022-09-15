@@ -1,0 +1,11 @@
+.column-status .new{
+    color: #ff0000;
+}
+
+.column-status .done{
+    color: #3C2BB6;
+}
+
+.column-status .clarification{
+    color: #000;
+}
