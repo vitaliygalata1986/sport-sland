@@ -14,8 +14,10 @@ add_action('rest_api_init', function () {
             'methods' => 'GET',
             'callback' => 'get_houses',
             'permission_callback' => function () {
-                // return true; // т.е. всегда разрешает вход
-                return current_user_can('manage_options'); // true/false  возвращает
+               // return is_user_logged_in(); // только авторизированный пользователь имеет доступ к эндпоинту
+               return true; // т.е. всегда разрешает вход
+               // return current_user_can('administrator'); // является ли пользователем администратором
+               // return current_user_can('manage_options'); // является ли пользователем администратором
             }
         ],
         [
@@ -23,13 +25,14 @@ add_action('rest_api_init', function () {
             'callback' => 'set_houses_title',
             'permission_callback' => function () {
                 // return false; // запрещаем доступ на этот роут (только для авторизованных)
-                return current_user_can('manage_options'); // true/false  возвращает
+                // return current_user_can('manage_options'); // true/false  возвращает
+                return true;
             },
             'args' => [
                 'id' => [ // без id мы не сможем поменять заголовок у каой-то записи
                     'required' => true,
                     'type' => 'integer',
-                    'default' => 153, // по дефолту это первая квартира с id 153
+                    'default' => 334, // по дефолту это первая квартира с id 153
                 ],
                 'title' => [
                     'required' => true,
@@ -38,7 +41,40 @@ add_action('rest_api_init', function () {
             ]
         ]
     ]);
+
+    // http://sport-island.loc/wp-json/blog/v1/user/1
+    register_rest_route('blog/v1', 'user/(?P<id>\d+)', [
+        [
+            'methods'  => 'GET',
+            'callback' => 'get_user',
+        ],
+        [
+            'methods'  => 'POST',
+            'callback' => 'set_user_title',
+        ]
+
+    ]);
 });
+
+function get_user($request) {
+    $user_id = $request->get_param('id');
+    $user = get_user_by('id', $user_id);
+
+    if (!$user) {
+        return new WP_Error('no_user', 'User not found', array('status' => 404));
+    }
+
+    return [
+        'ID' => $user->ID,
+        'user_login' => $user->user_login,
+        'user_email' => $user->user_email,
+        'display_name' => $user->display_name,
+    ];
+}
+
+function set_user_title(){
+
+}
 
 
 function get_houses($req)

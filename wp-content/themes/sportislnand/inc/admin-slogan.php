@@ -17,7 +17,7 @@ function si_register_slogan()
     add_settings_field( // сначала регестрируем это поле (т.е. отобразим инпут), а потом саму настройку
         'si_option_field_slogan', //id - который будет добавлен к этому инпуту
         'Слоган вашего сайта: ',
-        'si_option_slogan_cb', // название функции, которая  будет отвечать з вертку этго поля
+        'si_option_slogan_cb', // название функции, которая  будет отвечать за верстку этго поля
         'general', // ярлык той странице настроек, которой мы хотим добавить наше поле
         'default', // название секции, куда мы хотим добавить нашу настройку
         ['label_for' => 'si_option_field_slogan'] // параметры, которые попадут в вызов функции, которую мы будем создавать
@@ -43,7 +43,7 @@ function si_option_slogan_cb($args){  // в $args попадет ['label_for' =>
     <input
         type="text"
         id="<?php echo $slug; ?>"
-        value="<?php echo get_option($slug); ?>"
+        value="<?php echo get_option($slug); // получает значение указанной настройки (опции) ?>"
         name="<?php echo $slug; ?>"
         class="regular-text"
     >

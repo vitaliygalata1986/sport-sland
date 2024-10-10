@@ -21,8 +21,7 @@
                 </p>
                 <input type="hidden" name="action" value="si-modal-form">
                 <button class="btn" type="submit">Отправить</button>
-                <input type="hidden" name="action" value="si-modal-form">
-                <input type="hidden" name="form-post-id" value="99"><input type="hidden" name="form-post-id" value="99"></form>
+            </form>
         </section>
     </div>
 </div>
@@ -117,13 +116,13 @@
     }
 
     // для get запроса
-    /*
+/*
         ;(async()=>{
             const req = await fetch(wpApiSettings.restUrl+'real_estate/v1/houses/?_wpnonce='+wpApiSettings.nonce);
             const res = await req.json();
             console.log(res);
         })()
-    */
+*/
 
     // для post запроса
     ;(async()=>{

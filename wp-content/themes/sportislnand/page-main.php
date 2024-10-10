@@ -100,7 +100,7 @@ get_header();
                             $profit_class=' card_profitable';
                         }
                         $benefits = get_field('club_benefits');
-                        $benefits = explode('\n', $benefits); // получили массив строк
+                        $benefits = explode(',', $benefits); // получили массив строк
                         $bg = get_the_post_thumbnail_url(get_the_ID());
                         $default=_si_assets_path('/img/index__cards_card1.jpg');
                         $bg = $bg ?
@@ -125,6 +125,8 @@ get_header();
             </div>
         </section>
     <?php endif; ?>
+
+    <?php // echo do_shortcode('[instagram-feed feed=1]')?>
 </main>
 
 <?php get_footer(); ?>

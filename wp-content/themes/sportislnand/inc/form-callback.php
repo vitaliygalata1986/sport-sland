@@ -31,15 +31,20 @@ function si_modal_form_handler()
         ]));
         // если функция wp_insert_post успешно записала в базу, то добавит в базу id записи, иначе 0 (если мы так настроим)
         // в нашем случае будет 0 - если запись в базу не произойдет
+
+
         if ($id !== 0) { // если данные записались успешно, то обновим поле post_title
             wp_update_post([
                 'ID' => $id,
                 'post_title' => 'Заявка № ' . $id,
             ]);
-            // обновим данные нашео мета-поля, который мы создали через ACF
+            // обновим данные нашего мета-поля, который мы создали через ACF
             update_field('orders_status', 'new', $id); // ярлык поля, который хотим обновить
             // wp_mail();
         }
+
+
+
     }
 
 
@@ -104,8 +109,20 @@ function si_status_column($col_name, $id)
     // когда будут выводится колонки - эта функция будет выполняться каждый раз, поэтому сделаем проверку:
     if ($col_name !== 'status') return;
     // дальше код будет работать, когда дойдем до вывода этой колонки: status
+
+    //$id = get_the_ID();
     $status = get_field('orders_status', $id);
+   // print_r($status);
+
+
+
+
+
+
     $text_status = ($status['value'] == "new") ? 'new' : (($status['value']) == "done" ? 'done' : 'clarification');
+
+
+
     echo $status ? '<span class="' . $text_status . '">' . $status['label'] . '</span>' : 0;
 }
 

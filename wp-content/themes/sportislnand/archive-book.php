@@ -1,4 +1,7 @@
-<?php get_header() ?>
+<?php get_header(); ?>
+
+    <h3>Archive template from theme </h3>
+
     <main class="main-content">
         <h1 class="sr-only">Цены на наши услуги и клубные карты</h1>
         <div class="wrapper">

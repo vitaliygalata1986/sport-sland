@@ -32,6 +32,8 @@ foreach ($widgest as $w) {
     require_once(__DIR__ . '/inc/widget/' . $w);
 }
 
+require_once 'inc/filters_hook/filters_hook.php';
+
 
 
 

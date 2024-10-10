@@ -14,6 +14,16 @@
     }
   ?>
   <body class="<?php echo $body_class; ?>">
+  <?php
+  wp_nav_menu([
+      'theme_location' => 'menu-header',
+      'container' => 'nav',
+      'container_class' => 'main-navigation',
+      'menu_class' => 'main-navigation__list',
+      'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+  ]);
+  ?>
+  <?php wp_body_open ();?>
     <header class="main-header">
       <div class="wrapper main-header__wrap">
           <?php the_custom_logo();?>
@@ -34,3 +44,4 @@
         </button>
       </div>
     </header>
+  <?php // echo do_shortcode('[wpaicg_chatgpt id=319]')?>

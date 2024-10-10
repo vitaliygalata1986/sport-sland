@@ -36,6 +36,7 @@ class SI_Widget_Text extends WP_Widget{
         //echo $args['before_widget'];
         echo apply_filters('si_widget_text',$instance['text']); // получаем те данные, которые были сохранены
         //echo $args['after_widget'];
+		//echo $instance['text'];
         // все функции, подписанные на этот фильтр apply_filters - запустятся в этом месте (у нас это do_shortcode)
         // и в качестве параметра будет передан тот текст, который нужно вывести
     }

@@ -9,7 +9,7 @@
           <div class="wrapper">
            <?php get_template_part('tmp/breadcrumbs')?>
           </div>
-            <?php if (is_user_logged_in()):?>
+            <?php if (is_user_logged_in()): // возвращает true/false в зависимости от того - зарегстрир. пользователь или нет?>
                 <section class="contacts">
                       <?php if(have_posts()): while (have_posts()): the_post();?>
                             <div class="wrapper">
@@ -35,15 +35,15 @@
             <?php else:?>
             <div class="wrapper">
                 <form class="registration" action="<?php echo esc_url(admin_url('admin-ajax.php'))?>">
-                    <input type="text" name="login" required>
-                    <input type="password" name="pass"required>
-                    <input type="email" name="email" required>
+                    <input type="text" name="login" placeholder="login" required>
+                    <input type="password" name="pass" placeholder="password" required>
+                    <input type="email" name="email" placeholder="email" required>
                     <input type="hidden" name="action" value="registration">
                     <button type="submit"><?php _e('Регистрация','sport-island') ?></button>
                 </form>
                 <form class="auth" action="<?php echo esc_url(admin_url('admin-ajax.php'))?>">
-                    <input type="text" name="login" required>
-                    <input type="password" name="pass" required>
+                    <input type="text" name="login" placeholder="login" required>
+                    <input type="password" name="pass" placeholder="password" required>
                     <input type="hidden" name="action" value="auth">
                     <button type="submit"><?php _e('Авторизация','sport-island')?></button>
                 </form>
@@ -51,9 +51,9 @@
             <?php endif;?>
         </main>
         <style>
-            /*.auth{*/
-            /*    display: none;*/
-            /*}*/
+            .auth{
+                /*display: none;*/
+            }
         </style>
         <script>
             window.onload = ()=>{
@@ -70,8 +70,8 @@
                         // console.log(data)
                         // console.log(result)
                         if(result.ok){
-                            e.target.style.display="none"
-                            auth.style.display="block"
+                            e.target.style.display="none" // скроем текущую форму
+                            auth.style.display="block"    // следующую форму откроем
                             let id = await result.text() // этот метод прочитает ответ как текст
                             // console.log(id)
                         }
@@ -87,7 +87,7 @@
                             e.target.style.display="none"
                             let login = await result.text() // этот метод прочитает ответ как текст
                             window.location.reload();
-                            console.log(login)
+                            // console.log(login)
                             // document.body.insertAdjacentHTML('afterbegin',`<h1>Привет, ${login}</h1`)
                         }else{
                             console.log('Не получилось авторизоваться - такого пользователя нет или неправильно ввели данные')
