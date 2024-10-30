@@ -5,6 +5,10 @@ wp-content/themes/twentytwentyone/
 wp-content/themes/twentytwentytwo/
 wp-content/themes/my-inherit/
 wp-content/plugins/
+!wp-content/plugins/vitospanel/
+!wp-content/plugins/vitos-cookie-notify/
+!wp-content/plugins/sportisland-study-hooks/
+!wp-content/plugins/sportisland-study/
 wp-content/uploads/
 wp-content/cache/
 wp-content/backups-dup-lite/

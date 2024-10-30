@@ -1,0 +1,10 @@
+{
+  "apiVersion": 2,
+  "title": "Sportisland Block 2",
+  "name": "sportisland-block/block2",
+  "category": "text",
+  "icon": "plugins-checked",
+  "editorScript": "file:./block.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css"
+}
