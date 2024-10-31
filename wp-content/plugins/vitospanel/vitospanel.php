@@ -25,3 +25,10 @@ function vitos_activate(){
 }
 
 register_activation_hook(__FILE__, 'vitos_activate'); // при активации хука будет вызвана функция vitos_activate
+
+require_once VITOSPANEL_PLUGIN_DIR . '/includes/class-vitospanel.php';
+
+function run_vitospanel(){
+    $plugin = new Vitospanel(); // вызывается экземпляр данного класа
+}
+run_vitospanel();

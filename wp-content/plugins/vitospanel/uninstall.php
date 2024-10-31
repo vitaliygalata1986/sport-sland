@@ -1,6 +1,6 @@
 <?php
 // если константа не определена в момент удаления плагина
-if(!defined('VITOS_UNINSTALL_PLUGIN')){
+if(!defined('WP_UNINSTALL_PLUGIN')){
     exit;
 }
 
