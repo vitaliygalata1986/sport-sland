@@ -7,13 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800,900&display=swap&subset=cyrillic" rel="preload stylesheet">
     <?php wp_head();?>
   </head>
-  <?php
-    $body_class='';
-    if(!is_front_page()){ // если не главная стр.
-        $body_class='inner';
-    }
-  ?>
-  <body class="<?php echo $body_class; ?>">
+  <!--
+  Этот код проверяет, является ли текущая страница главной, и добавляет класс inner, если это не так.
+  body_class() уже включает в себя стандартные классы WordPress
+  -->
+  <body <?php body_class(!is_front_page() ? 'inner' : ''); ?>>
   <?php
   wp_nav_menu([
       'theme_location' => 'menu-header',

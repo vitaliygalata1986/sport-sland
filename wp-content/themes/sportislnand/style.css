@@ -2,3 +2,10 @@
 Theme Name: Sport Island
 Author: Vitaliy Galata
 */
+.single .main-content {
+    z-index: unset!important;
+}
+.alignleft{
+    float: left;
+    margin-right: 20px;
+}

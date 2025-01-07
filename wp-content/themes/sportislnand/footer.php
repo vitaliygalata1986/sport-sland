@@ -125,6 +125,7 @@
 */
 
     // для post запроса
+    /*
     ;(async()=>{
         const data = new FormData();
         data.append('title', 'Новый заголовок для квартира 153');
@@ -138,6 +139,7 @@
         const res = await req.json();
         console.log(res);
     })()
+    */
 
 /*
     const test = async function(){

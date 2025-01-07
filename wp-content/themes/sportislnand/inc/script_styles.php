@@ -10,6 +10,7 @@ function si_scripts()
 {
     wp_enqueue_script('js', _si_assets_path('js/js.js'), [], '1.0', true);
     wp_enqueue_script('custom-js', _si_assets_path('js/custom.js'), [], '1.0', true);
+    wp_enqueue_style('main-style', get_stylesheet_uri(),  [], '1.0', 'all');
     wp_enqueue_style('si_style', _si_assets_path('css/styles.css'), [], '1.0', 'all');
     wp_dequeue_style('wp-block-library'); // удалим стиль WP wp-block-library-css (css он сам дописывает) нужен он для редактора Gutenberg
     /*
