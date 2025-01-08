@@ -1,0 +1,47 @@
+.pagination{
+    margin: 20px 20px 20px 0;
+}
+
+.pagination span,
+.pagination a{
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #428bca;
+    padding: 6px 12px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.pagination span.current{
+    background: #428bca;
+    color: #fff;
+    border: 1px solid #ddd;
+}
+
+.pagination a:hover{
+    background: #eee;
+}
+
+.pagination span.dots{
+    border: none;
+}
+
+#vitospanel_loader{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 9999;
+}
+
+#vitospanel_loader img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
