@@ -12,6 +12,7 @@ wp-content/backups-dup-lite/
 # Игнорирование всех плагинов, кроме указанных
 wp-content/plugins/*
 !wp-content/plugins/vitospanel/
+!wp-content/plugins/vitosslider/
 !wp-content/plugins/vitos-cookie-notify/
 !wp-content/plugins/sportisland-study-hooks/
 !wp-content/plugins/sportisland-study/

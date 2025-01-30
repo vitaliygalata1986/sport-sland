@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Vitos Post Panel
-Plugin URI: https://github.com/vitaliygalata1986
+Plugin URI: https://github.com/vitaliygalata1986/sport-sland/
 Description: The plugin allows you to add a slide with the necessary content for the selected posts
 Version: 1.0
 Author: Vitaliy Galata

@@ -106,6 +106,7 @@ class Vitospanel_Admin
             }
         }
         wp_redirect($_POST['_wp_http_referer']); // _wp_http_referer - the address of the page where we want to make a redirect
+        exit;
     }
 
     public function admin_menu()

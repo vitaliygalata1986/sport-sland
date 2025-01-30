@@ -22,6 +22,7 @@ get_header();
                     <p class="about__text"><?php echo $post_about->post_excerpt; ?> </p>
                     <a href="<?php echo get_the_permalink($post_about->ID) ?>" class="about__link btn">подробнее</a>
                 </div>
+
                 <figure class="about__thumb">
                     <?php echo get_the_post_thumbnail($post_about->ID, 'full') ?>
                 </figure>

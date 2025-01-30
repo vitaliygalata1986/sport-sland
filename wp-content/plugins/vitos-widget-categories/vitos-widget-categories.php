@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Vitos Categories Widget
-Plugin URI: https://github.com/vitaliygalata1986
+Plugin URI: https://github.com/vitaliygalata1986/sport-sland/
 Description: Categories Widget description
 Version: 1.0
 Author: Vitaliy Galata
