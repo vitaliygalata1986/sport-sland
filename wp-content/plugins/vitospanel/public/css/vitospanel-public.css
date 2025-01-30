@@ -12,6 +12,10 @@
     max-width: 100%;
 }
 
+#slidebox h3{
+    color:#000;
+}
+
 #slidebox div {
     margin-top: 20px;
 }
