@@ -114,14 +114,7 @@ function si_status_column($col_name, $id)
     $status = get_field('orders_status', $id);
    // print_r($status);
 
-
-
-
-
-
     $text_status = ($status['value'] == "new") ? 'new' : (($status['value']) == "done" ? 'done' : 'clarification');
-
-
 
     echo $status ? '<span class="' . $text_status . '">' . $status['label'] . '</span>' : 0;
 }
@@ -129,7 +122,7 @@ function si_status_column($col_name, $id)
 function si_add_col_status($defaults)
 { // те дефолтные колонки, которые есть в Wordpress из коробки
     $type = get_current_screen(); // возвращает информацию в админке про текущую страницу в которой мы находимся - и это объект
-    if ($type->post_type === 'orders') { // если тип записи у нас запись
+    if ($type->post_type === 'orders') { // если тип записи у нас orders
         $defaults['status'] = 'Статус'; // добавляем новый ключ
     }
     return $defaults;

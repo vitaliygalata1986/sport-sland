@@ -12,7 +12,7 @@ $files = [
     'script_styles.php',
     'form-callback.php',
     'ajax-form-registration.php',
-    'rest_api.php'
+  //  'rest_api.php'
 ];
 
 $widgest = [
