@@ -1,6 +1,7 @@
 # Игнорирование файлов
 .tmb/
 .idea/
+node_modules/
 wp-content/themes/twentytwenty/
 wp-content/themes/twentytwentyone/
 wp-content/themes/twentytwentytwo/
@@ -18,3 +19,4 @@ wp-content/plugins/*
 !wp-content/plugins/sportisland-study/
 !wp-content/plugins/vitos-widget-categories-oop/
 !wp-content/plugins/vitos-widget-categories/
+!wp-content/plugins/gutenberg-block/
