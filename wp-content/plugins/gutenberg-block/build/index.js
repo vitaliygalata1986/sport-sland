@@ -1,13 +1,113 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/edit.js":
+/*!*********************!*\
+  !*** ./src/edit.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ edit)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
+
+
+ // импорт стилей для редактора
+function edit() {
+  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
+  // console.log(blockProps); // {id: 'block-6fdc1f4e-8c6e-4241-bf0b-36624c3a399e', tabIndex: 0, role: 'document', aria-label: 'Блок: My Block', ref: ƒ, …}
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
+    ...blockProps
+  }, "Edit 2");
+}
+
+/***/ }),
 
 /***/ "./src/editor.scss":
 /*!*************************!*\
   !*** ./src/editor.scss ***!
   \*************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: expected more input.\n  ╷\n6 │ /** /\n  │      ^\n  ╵\n  src\\editor.scss 6:6  root stylesheet\n    at tryRunOrWebpackError (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\HookWebpackError.js:86:9)\n    at __webpack_require_module__ (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5301:12)\n    at __webpack_require__ (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5258:18)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5330:20\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\Hook.js:18:14)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5236:43\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5198:16\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5166:15\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5112:8\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3531:6\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\HookWebpackError.js:67:2\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:111:20)\n    at ItemCacheFacade.store (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\CacheFacade.js:141:15)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3530:11\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:97:5\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:79:18)\n    at ItemCacheFacade.get (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3498:9)\n    at codeGen (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5100:11)\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5130:14\n    at processQueue (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)\n-- inner error --\nError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: expected more input.\n  ╷\n6 │ /** /\n  │      ^\n  ╵\n  src\\editor.scss 6:6  root stylesheet\n    at Object.<anonymous> (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[1]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[2]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\sass-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[3]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\src\\editor.scss:1:7)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\javascript\\JavascriptModulesPlugin.js:494:10\n    at Hook.eval [as call] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at Hook.CALL_DELEGATE [as _call] (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\Hook.js:14:14)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5303:39\n    at tryRunOrWebpackError (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\HookWebpackError.js:81:7)\n    at __webpack_require_module__ (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5301:12)\n    at __webpack_require__ (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5258:18)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5330:20\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\Hook.js:18:14)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5236:43\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5198:16\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5166:15\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5112:8\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3531:6\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\HookWebpackError.js:67:2\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:111:20)\n    at ItemCacheFacade.store (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\CacheFacade.js:141:15)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3530:11\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:97:5\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:79:18)\n    at ItemCacheFacade.get (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3498:9)\n    at codeGen (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5100:11)\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5130:14\n    at processQueue (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)\n\nGenerated code for C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[1]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[2]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\sass-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[3]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\src\\editor.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: expected more input.\\n  ╷\\n6 │ /** /\\n  │      ^\\n  ╵\\n  src\\\\editor.scss 6:6  root stylesheet\");");
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./edit */ "./src/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./save */ "./src/save.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
+
+
+
+ // импорт стилей для фронтенда и редактора
+
+// var registerBlockType = wp.blocks.registerBlockType; //  это метод API Gutenberg, который используется для регистрации нового блока.
+
+/*
+    Gutenberg построен на React, но в WordPress он используется через wp.element, который оборачивает React.
+    Функция createElement используется для создания элементов React вручную, без JSX.
+*/
+
+// var createElement = wp.element.createElement;
+
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('vitos/myblock', {
+  edit: _edit__WEBPACK_IMPORTED_MODULE_1__["default"],
+  save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
+
+/*
+    name – уникальный идентификатор блока (должен содержать префикс, например, vitos/myblock)
+    settings – объект с настройками блока, включая его поведение в редакторе и сохранённый HTML-код
+*/
+
+/*
+    edit() – что видит пользователь в редакторе
+    save() – что сохраняется в базе данных
+*/
+
+/***/ }),
+
+/***/ "./src/save.js":
+/*!*********************!*\
+  !*** ./src/save.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ save)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
+
+ // { useBlockProps } from '@wordpress/block-editor'; // react hook в котором хранятся свойства блока (классы, id, data-атрибуты и т.д.)
+
+function save() {
+  const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save(); // на фронте дефолтных свойств не будет
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
+    ...blockProps
+  }, "Save 2");
+}
 
 /***/ }),
 
@@ -15,9 +115,11 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /*!************************!*\
   !*** ./src/style.scss ***!
   \************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: expected more input.\n   ╷\n10 │ /\n   │  ^\n   ╵\n  src\\style.scss 10:2  root stylesheet\n    at tryRunOrWebpackError (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\HookWebpackError.js:86:9)\n    at __webpack_require_module__ (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5301:12)\n    at __webpack_require__ (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5258:18)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5330:20\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5236:43\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5198:16\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5166:15\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5112:8\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3531:6\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\HookWebpackError.js:67:2\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:111:20)\n    at ItemCacheFacade.store (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\CacheFacade.js:141:15)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3530:11\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:97:5\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:79:18)\n    at ItemCacheFacade.get (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3498:9)\n    at codeGen (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5100:11)\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5130:14\n    at processQueue (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)\n-- inner error --\nError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: expected more input.\n   ╷\n10 │ /\n   │  ^\n   ╵\n  src\\style.scss 10:2  root stylesheet\n    at Object.<anonymous> (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[1]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[2]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\sass-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[3]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\src\\style.scss:1:7)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\javascript\\JavascriptModulesPlugin.js:494:10\n    at Hook.eval [as call] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5303:39\n    at tryRunOrWebpackError (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\HookWebpackError.js:81:7)\n    at __webpack_require_module__ (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5301:12)\n    at __webpack_require__ (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5258:18)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5330:20\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5236:43\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5198:16\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5166:15\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5112:8\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3531:6\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\HookWebpackError.js:67:2\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:111:20)\n    at ItemCacheFacade.store (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\CacheFacade.js:141:15)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3530:11\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:97:5\n    at Hook.eval [as callAsync] (eval at create (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Cache.js:79:18)\n    at ItemCacheFacade.get (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:3498:9)\n    at codeGen (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5100:11)\n    at symbolIterator (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\Compilation.js:5130:14\n    at processQueue (C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)\n\nGenerated code for C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[1]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[2]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\node_modules\\sass-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[3]!C:\\OpenServer\\domains\\hoock\\wordpress\\wp-content\\plugins\\gutenberg-block\\src\\style.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: expected more input.\\n   ╷\\n10 │ /\\n   │  ^\\n   ╵\\n  src\\\\style.scss 10:2  root stylesheet\");");
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -27,7 +129,6 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
   \*************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = window["wp"]["blockEditor"];
 
 /***/ }),
@@ -38,7 +139,6 @@ module.exports = window["wp"]["blockEditor"];
   \********************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = window["wp"]["blocks"];
 
 /***/ }),
@@ -49,7 +149,6 @@ module.exports = window["wp"]["blocks"];
   \************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = window["React"];
 
 /***/ })
@@ -80,7 +179,42 @@ module.exports = window["React"];
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	(() => {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -121,64 +255,68 @@ module.exports = window["React"];
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"index": 0,
+/******/ 			"./style-index": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkmyblock"] = globalThis["webpackChunkmyblock"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
-(() => {
-"use strict";
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
-
-
- // react hook в котором хранятся свойства блока (классы, id, data-атрибуты и т.д.)
- // импорт стилей для фронтенда и редактора
- // импорт стилей для редактора
-// var registerBlockType = wp.blocks.registerBlockType; //  это метод API Gutenberg, который используется для регистрации нового блока.
-
-/*
-    Gutenberg построен на React, но в WordPress он используется через wp.element, который оборачивает React.
-    Функция createElement используется для создания элементов React вручную, без JSX.
-*/
-
-// var createElement = wp.element.createElement;
-
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)('vitos/myblock', {
-  edit: function () {
-    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
-    // console.log(blockProps); // {id: 'block-6fdc1f4e-8c6e-4241-bf0b-36624c3a399e', tabIndex: 0, role: 'document', aria-label: 'Блок: My Block', ref: ƒ, …}
-    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
-      ...blockProps
-    }, "Edit 2");
-  },
-  save: function () {
-    const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(); // на фронте дефолтных свойств не будет
-    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
-      ...blockProps
-    }, "Save 2");
-  }
-});
-
-/*
-    name – уникальный идентификатор блока (должен содержать префикс, например, vitos/myblock)
-    settings – объект с настройками блока, включая его поведение в редакторе и сохранённый HTML-код
-*/
-
-/*
-    edit() – что видит пользователь в редакторе
-    save() – что сохраняется в базе данных
-*/
-})();
-
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-index"], () => (__webpack_require__("./src/index.js")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map
