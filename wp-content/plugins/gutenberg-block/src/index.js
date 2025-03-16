@@ -1,6 +1,6 @@
 import { registerBlockType } from '@wordpress/blocks';
-import Edit from './edit'
-import Save  from './save'
+import Edit from './edit';
+import Save from './save';
 import './style.scss'; // импорт стилей для фронтенда и редактора
 
 // var registerBlockType = wp.blocks.registerBlockType; //  это метод API Gutenberg, который используется для регистрации нового блока.
@@ -12,10 +12,10 @@ import './style.scss'; // импорт стилей для фронтенда и
 
 // var createElement = wp.element.createElement;
 
-registerBlockType('vitos/myblock', {
-  edit: Edit,
-  save: Save,
-});
+registerBlockType( 'vitos/myblock', {
+	edit: Edit,
+	save: Save,
+} );
 
 /*
     name – уникальный идентификатор блока (должен содержать префикс, например, vitos/myblock)

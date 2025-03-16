@@ -4,14 +4,23 @@
 	"description": "Gutenberg block",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
 		"b": "wp-scripts build",
-		"s": "wp-scripts start"
+		"s": "wp-scripts start",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip"
+	},
+	"stylelint": {
+		"extends": "@wordpress/stylelint-config/scss"
 	},
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@wordpress/scripts": "^25.5.1"
+		"@wordpress/eslint-plugin": "^22.6.0",
+		"@wordpress/scripts": "^25.5.1",
+		"@wordpress/stylelint-config": "^23.12.0"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^14.13.0",
