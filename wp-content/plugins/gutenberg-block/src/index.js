@@ -12,10 +12,10 @@ import './style.scss'; // импорт стилей для фронтенда и
 
 // var createElement = wp.element.createElement;
 
-registerBlockType( 'vitos/myblock', {
+registerBlockType('vitos/myblock', {
 	edit: Edit,
 	save: Save,
-} );
+});
 
 /*
     name – уникальный идентификатор блока (должен содержать префикс, например, vitos/myblock)
