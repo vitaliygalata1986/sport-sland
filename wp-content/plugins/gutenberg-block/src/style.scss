@@ -1,6 +1,16 @@
 $color: #000;
 
-.wp-block-vitos-myblock{
-    font-size: 100px;
-    background-color: $color;
+.wp-block-vitos-myblock {
+  font-size: 100px;
+  background-color: $color;
+
+  &.vitos-align-left {
+    text-align: left;
+  }
+  &.vitos-align-center {
+    text-align: center;
+  }
+  &.vitos-align-right {
+    text-align: right;
+  }
 }
