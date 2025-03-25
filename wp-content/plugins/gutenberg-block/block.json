@@ -18,6 +18,14 @@
 		"align": {
 			"type": "string",
 			"default": "left"
+		},
+		"color": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "transparent"
 		}
 	}
 }
