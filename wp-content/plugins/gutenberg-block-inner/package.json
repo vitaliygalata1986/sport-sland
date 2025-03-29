@@ -1,0 +1,31 @@
+{
+	"name": "myblock",
+	"version": "1.0.0",
+	"description": "Gutenberg block",
+	"main": "index.js",
+	"scripts": {
+		"b": "wp-scripts build",
+		"s": "wp-scripts start",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip"
+	},
+	"stylelint": {
+		"extends": "@wordpress/stylelint-config/scss"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^22.6.0",
+		"@wordpress/scripts": "^25.5.1",
+		"@wordpress/stylelint-config": "^23.12.0"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^14.13.0",
+		"@wordpress/blocks": "^14.7.0",
+		"@wordpress/components": "^29.6.0",
+		"@wordpress/i18n": "^5.21.0"
+	}
+}

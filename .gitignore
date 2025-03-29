@@ -20,3 +20,4 @@ wp-content/plugins/*
 !wp-content/plugins/vitos-widget-categories-oop/
 !wp-content/plugins/vitos-widget-categories/
 !wp-content/plugins/gutenberg-block/
+!wp-content/plugins/gutenberg-block-inner/
