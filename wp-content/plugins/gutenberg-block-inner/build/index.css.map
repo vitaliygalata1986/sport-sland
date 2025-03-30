@@ -1,1 +1,0 @@
-{"version":3,"file":"index.css","mappings":";;;AAEA;EACE,mBAHM;AAER,C","sources":["webpack://myblock/./src/editor.scss"],"sourcesContent":["$color: #f5f5f5;\r\n\r\n.wp-block-vitos-myblock {\r\n  background: $color;\r\n}"],"names":[],"sourceRoot":""}
