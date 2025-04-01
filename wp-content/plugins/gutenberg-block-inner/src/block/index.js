@@ -25,6 +25,22 @@ registerBlockType('vitos/myblock', {
 			source: 'html',
 			selector: 'p',
 		},
+		image_url: {
+			type: 'string',
+			source: 'attribute',
+			selector: 'img',
+			attribute: 'src',
+		},
+		image_alt: {
+			type: 'string',
+			source: 'attribute',
+			selector: 'img',
+			attribute: 'alt',
+			default: '',
+		},
+		image_id: {
+			type: 'number',
+		},
 	},
 	edit: Edit,
 	save: Save,
