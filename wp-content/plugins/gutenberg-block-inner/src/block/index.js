@@ -16,7 +16,7 @@ registerBlockType('vitos/myblock', {
 		title: {
 			// заголовок
 			type: 'string',
-			source: 'html', // чтобы не дубоировались данные в атрибутах
+			source: 'html', // чтобы не дублировались данные в атрибутах
 			selector: 'h2',
 		},
 		description: {
@@ -36,6 +36,13 @@ registerBlockType('vitos/myblock', {
 			source: 'attribute',
 			selector: 'img',
 			attribute: 'alt',
+			default: '',
+		},
+		image_title: {
+			type: 'string',
+			source: 'attribute',
+			selector: 'img',
+			attribute: 'title',
 			default: '',
 		},
 		image_id: {
