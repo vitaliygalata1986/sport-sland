@@ -1,0 +1,12 @@
+{
+  "apiVersion": 1,
+  "name": "vitos/dynamicblock",
+  "title": "Latest Posts",
+  "description": "Gutenberg Dynamic Block",
+  "category": "text",
+  "icon": "admin-customizer",
+  "textdomain": "dynamicblock",
+  "editorScript": "file:./build/index.js",
+  "style": "file:./build/style-index.css",
+  "editorStyle": "file:./build/index.css"
+}
