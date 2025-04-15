@@ -4,6 +4,6 @@ import Save from './save';
 import './style.scss'; // импорт стилей для фронтенда и редактора
 
 registerBlockType('vitos/dynamicblock', {
-  edit: Edit,
-  save: Save,
+	edit: Edit,
+	save: Save,
 });

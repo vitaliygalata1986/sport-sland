@@ -6,7 +6,9 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"b": "wp-scripts build",
-		"s": "wp-scripts start"
+		"s": "wp-scripts start",
+		"format": "wp-scripts format",
+		"lint:js": "wp-scripts lint-js"
 	},
 	"author": "",
 	"license": "ISC",
@@ -15,6 +17,10 @@
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^14.13.0",
-		"@wordpress/blocks": "^14.7.0"
+		"@wordpress/blocks": "^14.7.0",
+		"@wordpress/components": "^29.8.0",
+		"@wordpress/data": "^10.22.0",
+		"@wordpress/date": "^5.22.0",
+		"@wordpress/eslint-plugin": "^22.7.0"
 	}
 }
