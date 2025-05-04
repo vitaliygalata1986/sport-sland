@@ -12,15 +12,6 @@
   body_class() уже включает в себя стандартные классы WordPress
   -->
   <body <?php body_class(!is_front_page() ? 'inner' : ''); ?>>
-  <?php
-  wp_nav_menu([
-      'theme_location' => 'menu-header',
-      'container' => 'nav',
-      'container_class' => 'main-navigation',
-      'menu_class' => 'main-navigation__list',
-      'items_wrap' => '<ul class="%2$s">%3$s</ul>',
-  ]);
-  ?>
   <?php wp_body_open ();?>
     <header class="main-header">
       <div class="wrapper main-header__wrap">
